@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <NumberPicker
+        android:id="@+id/changeMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/changeHours"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/changeHoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/changeHours"
+        android:layout_alignRight="@+id/changeHours"
+        android:layout_below="@+id/changeHours"
+        android:gravity="center"
+        android:text="@string/hours" />
+
+    <TextView
+        android:id="@+id/changeMinutesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/changeHoursText"
+        android:layout_alignLeft="@+id/changeMinutes"
+        android:layout_alignRight="@+id/changeMinutes"
+        android:layout_below="@+id/changeMinutes"
+        android:gravity="center"
+        android:text="@string/minutes" />
+
+    <Button
+        android:id="@+id/changeTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeMinutesText"
+        android:layout_alignTop="@+id/changeMinutes"
+        android:layout_toRightOf="@+id/changeMinutes"
+        android:text="Button" />
+
+    <NumberPicker
+        android:id="@+id/changeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/changeMinutes" />
+
+    <TextView
+        android:id="@+id/changeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeMinutes"
+        android:layout_alignLeft="@+id/changeHours"
+        android:layout_alignRight="@+id/changeTimerButton"
+        android:layout_marginBottom="21dp"
+        android:text="@string/timer_change_description" />
+
+</RelativeLayout>

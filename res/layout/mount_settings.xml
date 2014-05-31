@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mountSettingsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esomount.MountSettingsActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <CheckBox
+        android:id="@+id/mountReminderCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:onClick="scheduleAlarm"
+        android:text="@string/mount_reminder_checkbox_text" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mountReminderCheckbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/already_fed_your_mount" />
+
+    <Button
+        android:id="@+id/adjustTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:onClick="openAdjustTimer"
+        android:text="@string/adjust_mount_timer_btn" />
+
+</RelativeLayout>

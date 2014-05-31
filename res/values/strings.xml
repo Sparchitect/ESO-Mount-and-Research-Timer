@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ESO Mount &amp; Research Timer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_mount">MountActivity</string>
+    <string name="title_activity_research">ResearchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="splash_the">The</string>
+    <string name="splash_eso">Elder Scrolls Online</string>
+    <string name="splash_mount">Mount</string>
+    <string name="splash_ampersand">&amp;</string>
+    <string name="splash_research">Research</string>
+    <string name="splash_timer">Timer</string>
+    <string name="home_mount">Mount:</string>
+    <string name="mountSettingsButtonText">Mount Settings</string>
+    <string name="home_research">Research:</string>
+    <string name="researchSettingsButton">Research Settings</string>
+    <string name="home_research_bs">Blacksmithing</string>
+    <string name="home_research_ww">Woodworking</string>
+    <string name="home_research_cl">Clothing</string>
+    <string name="feedMountButton">Feed</string>
+    <string name="resetMountTimerButton">Reset</string>
+    <string name="twenty_hours_in_milliseconds">72000000</string>
+    <string name="feedMountIn">Feed Mount in: </string>
+    <string name="title_mount_countdown">MOUNT COUNTDOWN</string>
+    <string name="exitButton">Exit</string>
+    <string name="title_activity_inverse_seek_bar">InverseSeekBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_fragment_pager_support">FragmentPagerSupport</string>
+    <string name="mount_title">Mount</string>
+    <string name="research_title">Research</string>
+    <string name="settings_title">Settings</string>
+    <string name="title_activity_alarm_reciever">AlarmReciever</string>
+    <string name="mount_reminder_checkbox_text">Remind me to\nfeed mount</string>
+    <string name="title_activity_time_picker_fragment">TimePickerFragment</string>
+    <string name="adjust_mount_timer_btn">Adjust Timer</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="timer_change_description">If your mount has already been fed and you want to adjust the timer accordingly, enter the amount of  time remaining based on what the Stable Keeper (or add-on) says in-game.</string>
+	<string name="already_fed_your_mount">Did you feed your mount\n and forget to start the timer? \nNo problem, adjust the timer!</string>
+</resources>

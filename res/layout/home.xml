@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".RelativeLayoutAndroidExample" xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_left_20"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:onClick="onFeedButtonClick"
+        android:text="@string/feedMountButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_right_20"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:text="@string/resetMountTimerButton"
+        android:onClick="onResetButtonClick" />
+
+    
+    <ImageButton
+        android:id="@+id/mountSettingsButton"
+        android:contentDescription="@string/mountSettingsButtonText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:onClick="onMountSettingsButtonClick"
+	    android:src="@drawable/ic_action_settings"/>
+  	
+    <ProgressBar
+        android:id="@+id/mountProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/mount_progress_bar_height"
+        android:layout_below="@+id/mountSettingsButton"
+        android:layout_marginLeft="@dimen/mount_progress_bar_margin_left"
+        android:layout_marginRight="@dimen/mount_progress_bar_margin_right"
+        android:layout_marginTop="@dimen/mount_progress_bar_margin_top"
+        android:layout_toEndOf="@color/home_bg"
+        android:max="72000000"
+        android:progress="0" 
+         />
+    
+    <TextView
+        android:id="@+id/timeStampTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mountProgressBar"
+        android:layout_below="@+id/mountProgressBar"
+        android:layout_marginTop="14dp"
+        android:text="@string/splash_the" />
+
+    <TextView
+        android:id="@+id/timeStampTest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeStampTest2"
+        android:layout_below="@+id/timeStampTest2"
+        android:layout_marginTop="11dp"
+        android:text="@string/splash_the" />
+
+    <TextView
+        android:id="@+id/timeStampTest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeStampTest3"
+        android:layout_below="@+id/timeStampTest3"
+        android:layout_marginTop="24dp"
+        android:text="@string/splash_the" />
+
+    <TextView
+        android:id="@+id/timeStampTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeStampTest1"
+        android:layout_below="@+id/timeStampTest1"
+        android:layout_marginTop="9dp"
+        android:text="@string/splash_the" />
+
+    <TextView
+        android:id="@+id/mount_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mountProgressBar"
+        android:layout_alignTop="@+id/mountProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/countdown_margin_top"
+        android:gravity="center"
+        android:text="@string/title_mount_countdown"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textSize="@dimen/h3_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feedAtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedButton"
+        android:layout_alignStart="@id/feedButton"
+        android:textSize="@dimen/feedAt_lastFed_text_size" />
+
+    <TextView
+        android:id="@+id/lastFedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetButton"
+        android:layout_alignEnd="@id/resetButton"
+        android:textSize="@dimen/feedAt_lastFed_text_size" />
+    
+</RelativeLayout>
